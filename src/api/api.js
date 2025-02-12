@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5000/api' });
+const API = axios.create({ baseURL: 'https://ecommerce-app-delta-vert.vercel.app/' });
 
 export const loginUser = (email, password) =>
   API.post('/users/login', { email, password });
