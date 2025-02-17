@@ -9,7 +9,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/api/products');
+        const { data } = await axios.get('https://ecommerce-app-delta-vert.vercel.app/api/products');
         setProducts(data); // Update state with fetched products
       } catch (error) {
         console.error('Error fetching products:', error.response || error.message);
